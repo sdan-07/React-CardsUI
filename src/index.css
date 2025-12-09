@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  background-color: rgb(235, 235, 235);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+  @apply mt-12
+}
+
+.top{
+  @apply mt-6 mx-1
+}
+.type{
+  @apply py-1 px-3 mt-4
+}
+.gridcards, .parent{
+  @apply m-12;
+}
+.center{
+  @apply mt-6;
+}
+.role{
+  @apply mt-2;
+}
+.card{
+  @apply p-6;
+}
+.logo{
+  @apply p-3
+}
