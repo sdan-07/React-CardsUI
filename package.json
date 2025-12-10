@@ -2,7 +2,6 @@
   "name": "joblistingcards",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sdan-07.github.io/React-CardsUI",
   "type": "module",
   "scripts": {
     "dev": "vite",
