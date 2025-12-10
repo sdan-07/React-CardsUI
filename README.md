@@ -1,16 +1,90 @@
-# React + Vite
+# Job Listings Cards UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Job Listings Cards UI** built using **React**, **Vite**, and **TailwindCSS**. This project demonstrates a clean card-based layout for job listings where each job card is passed data through **React props**.
 
-Currently, two official plugins are available:
+> ⚠️ The current version is **not responsive**. Future updates will include responsive breakpoints.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Modern card UI for job listing display
+* Built with **React + Vite** for fast development
+* Styled using **TailwindCSS**
+* Clean component structure using **props**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **React** (Functional Components)
+* **Vite** (Bundler & Dev Server)
+* **TailwindCSS** (Utility-first CSS framework)
+
+---
+
+## 📂 Project Structure
+
+```
+project/
+├── src/
+│   ├── components/
+│   │   └── Card.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## ▶️ Live Site
+
+The project is live and deployed here:
+
+👉 [**https://react-cards-ui-chi.vercel.app/**](https://react-cards-ui-chi.vercel.app/)
+
+````
+
+---
+
+## 🧩 Component Example
+Here’s a simple example of passing props to the Card component:
+```jsx
+<Card
+  company="Amazon"
+  type1="Part-Time"
+  type2="Senior Level"
+  role="Senior UI/UX Designer"
+  sal="$120/hr"
+  location="Mumbai, India"
+  logo="https://example.com/logo.svg"
+/>
+````
+
+---
+
+## 📱 Responsiveness
+
+Currently **not responsive**. Future updates may include:
+
+* Tailwind responsive breakpoints
+* Mobile-first layout
+* Grid adjustments for small screens
+
+---
+
+## 📌 Future Improvements
+
+* Add responsiveness
+* Add search & filter functionality
+* Integrate backend API for job listings
+* Add animations (Framer Motion / Tailwind transitions)
+
+---
+
+## 🙌 Acknowledgements
+
+This project was created as a simple practice UI to improve skills in **React**, **TailwindCSS**, and component-based design. More improvements will be added soon!
