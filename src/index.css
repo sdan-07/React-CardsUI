@@ -37,3 +37,6 @@ hr{
 .logo{
   @apply p-3
 }
+.new-btn, .old-btn{
+  @apply py-3 px-2;
+}

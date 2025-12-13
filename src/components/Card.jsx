@@ -1,16 +1,11 @@
 import {Bookmark} from 'lucide-react'
 import {BookmarkCheck} from 'lucide-react'
+import { useState } from 'react'
 
 
 const Card = (props) => {
-  // let oldSave = <button className='old-btn flex gap-2 '>Save <Bookmark /></button>
-  // let newSave = <button className='new-btn flex gap-2 bg-gray-300'>Saved <BookmarkCheck /></button>
-  
-  // const [save_Btn, setSave_Btn] = useState(oldSave)
 
-  // const handleClick = () => {
-  //   setSave_Btn(prev => prev === oldSave ? newSave : oldSave)
-  // }
+  const [isSave, setIsSaved] = useState(false)
 
   return (
     <> 
@@ -24,7 +19,10 @@ const Card = (props) => {
               </div>
               
               <div className="bkmk">
-                <button className='old-btn flex gap-2 cursor-pointer'>Save <Bookmark /></button>
+                <button className={`flex gap-2 bg-slate-50 cursor-pointer ${isSave ? 'new-btn bg-slate-200' : 'old-btn'}`} onClick={()=>{
+                  setIsSaved(prev => !prev)
+               
+                }}> {isSave ? "Saved" : "Save"} {isSave ? <BookmarkCheck /> : <Bookmark />}  </button>
               </div>
             </div>
 
