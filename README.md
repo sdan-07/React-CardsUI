@@ -2,8 +2,6 @@
 
 A simple **Job Listings Cards UI** built using **React**, **Vite**, and **TailwindCSS**. This project demonstrates a clean card-based layout for job listings where each job card is passed data through **React props**.
 
-> ⚠️ The current version is **not responsive**. Future updates will include responsive breakpoints.
-
 ---
 
 ## 🚀 Features
